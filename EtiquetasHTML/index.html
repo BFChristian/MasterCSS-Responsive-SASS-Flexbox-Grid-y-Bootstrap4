@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Titulo-->
+        <title>Conceptos y Etiquetas</title>
+    </head>
+    <body>
+        <!--encabezados-->
+        <h1>Titulo</h1>
+        <h2>Subtitulo</h2>
+        <h3>Sub-subtitulo</h3>
+        <!--link, para abrir en otra pestaña(target="_blank")-->        
+        <a href="http://www.google.com.ar" target="_blank">Google</a>
+        <br>
+        <!--etiqueta para hacer maquetacion-->
+        <span class="holi">hola puedo ser una etiqueta</span>
+        <!--salto de linea-->
+        <br/>
+        <!--salto de linea dibujado-->
+        <hr>
+        <!--letra en negrita-->
+        <strong>letra en negrita</strong>
+        <!--letra en cursiva-->
+        <em>letra en cursiva</em>
+        <!--parrafo-->
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non diam ut velit auctor ornare.
+            Mauris aliquet aliquam sapien, quis vestibulum tortor rutrum lacinia. Maecenas enim arcu, placerat nec felis a, consequat suscipit diam.
+            Sed id tincidunt orci. In lacinia luctus augue, ac dignissim arcu mollis non. Aenean convallis magna diam, dignissim tincidunt massa ornare quis. 
+            Curabitur in enim nulla. Curabitur et velit nisl. Fusce iaculis egestas lacus vel consectetur. Maecenas aliquam ipsum id nunc cursus, vel volutpat lacus efficitur.
+            Fusce elementum odio purus, vitae feugiat enim accumsan et. Suspendisse non nibh dictum sem consequat venenatis non nec elit.
+            Morbi dignissim laoreet erat. Duis non massa vel tortor fermentum aliquam eu quis lacus. Morbi eget velit luctus, vulputate dolor ac, aliquet turpis.
+            <!--lista ordenada-->
+            <ol>
+                <!--item de una lista-->
+                <li>Manzana</li>
+                <li>Naranja</li>
+                <li>Sandia</li>
+            </ol>
+            <!--lista desordenada-->
+            <ul>
+                <!--item de una lista-->
+                <li>Lechuga</li>
+                <li>Tomate</li>
+                <li>Zanahoria</li>
+            </ul>
+        </p>
+        <!--cita de texto-->
+        <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non diam ut velit auctor ornare.
+            Mauris aliquet aliquam sapien, quis vestibulum tortor rutrum lacinia. Maecenas enim arcu, placerat nec felis a, consequat suscipit diam.
+            Sed id tincidunt orci. In lacinia luctus augue, ac dignissim arcu mollis non. Aenean convallis magna diam, dignissim tincidunt massa ornare quis.
+        </blockquote>
+        <!--imagenes-->
+        <img src="gatito.jpg" alt="imagen de prueba" title="img prueba" width="200px" height="200px">
+        <h3>Tablas</h3>
+        <!--tabla--> 
+        <table border="1">
+            <!--fila (tr)-->
+            <tr>
+                <!--columna (td) y (th) en negrita-->
+                <th>nombre</th>
+                <th>apellido</th>
+                <th colspan="2">pais</th>
+            </tr>
+            <tr>
+                <!--columna (td) y (th) en negrita-->
+                <td>christian</td>
+                <td>benito</td>
+                <!--colspan ocupar mas columnas-->
+                <td colspan="2">argentina</td>
+            </tr>
+        </table>
+        <!--formulario-->
+        <form action="">
+            <!--texto anidado-->
+            <label for="nombre">nombre</label>
+            <!--ingreso de texto-->
+            <input type="text" name="nombre" id="" placeholder="Escribi tu nombre"/>
+            <p>
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion" id="" cols="20" rows="2"></textarea>
+            </p>
+            <!--radiobutton-->       
+            <input type="radio" name="genero" value="hombre"> Hombre <br/>
+            <input type="radio" name="genero" value="mujer"> Mujer <br/>
+            <input type="radio" name="genero" value="sin definir"> Sin definir <br/>
+            <!--seleccionador-->
+            <select name="genero" id="">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="sin definir">Sin definir</option>
+            </select>
+            <!--enviar formulario-->
+            <input type="submit" value="enviar formulario">
+        </form>
+    </body>
+</html>
