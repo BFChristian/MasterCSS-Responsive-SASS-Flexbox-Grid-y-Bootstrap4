@@ -1,0 +1,54 @@
+/* ####################SELECTORES#################### */
+/*Selector universal*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Selector de etiqueta*/
+h1{
+    background-color: indigo;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+footer a{
+    color: red;
+    text-decoration: none;
+}
+/*Selector de id*/
+#descripcion,
+#otroidoclase{
+    border: 2px solid black;
+    padding: 10px;
+}
+/*Selector de clase*/
+.parrafo{
+    font-style: italic;
+    text-decoration: dashed;
+    font-weight: bold;
+}
+/*Selector de atributo*/
+#usuario form{
+    border: 2px solid blue;
+}
+#usuario form *{
+    display: block; /*esto es para que cada elemento ocupe una sola linea*/
+}
+input[type="text"]{
+    margin-bottom: 15px;
+}
+input[type="submit"]{
+    background-color: brown;
+    color: whitesmoke;
+    padding: 15px;
+    cursor: pointer;
+}
+/*selectores hijos*/
+#usuario > form > h4{
+    font-size: 18px;
+    color: tomato;
+    text-decoration: none;
+}
+/*CSS da prioridad al ultimo estilo codeado PERO prioriza la especificidad*/
+h1{
+    color: white !important; /*para que sea de maxima prioridad*/
+}

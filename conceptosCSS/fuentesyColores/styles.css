@@ -1,0 +1,59 @@
+/* ########## FUENTES ########## */
+/* importar una fuente */
+@font-face{
+    font-family: MonserratFuenteCustom;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+h1{
+    /*va en orden de cual encuentra primero en el sistema:
+     si encuentra arial usa esa, sino usa helvetica, etc.. */
+    font-family: 'Mansalva', cursive;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-style: italic;
+}
+
+h3{
+    font-family: MonserratFuenteCustom;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold; /*grosor*/
+}
+
+/* #################### */
+
+h1{
+    /* Colores del sistema */
+    color: olive;    
+    /* Colores hexadecimales */
+    color: #532323;
+    /* Colores RGB */
+    color: rgb(255, 225, 107);
+    /* Colores RGBA */
+    color: rgba(225, 225, 107, 0.5);
+}
+
+/* Fondos */
+
+body{
+    background-color: crimson;
+    background-image: url(images/lemonBackground.webp);
+    background-repeat: repeat;
+    /*es para que el fondo quede estatico y no se mueva con el scroll*/
+    background-attachment: fixed;
+}
+
+#titulo{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+}
+/* Textos */
+#caja{
+    text-align: justify;
+    line-height: 50px;
+}
