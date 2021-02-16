@@ -1,0 +1,31 @@
+/* magenes, padding, alto , ancho y bordes */
+*{
+    margin: 0px; /*margen externo*/
+    padding: 0px; /*margen interno*/
+}
+
+.caja{
+    width: 250px;
+    height: 250px;
+    background-color: brown;
+    border: 5px solid black;
+    margin: 15px;
+}
+/* posicionamiento de cajas */
+
+.caja{
+    float: left;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/* acomodar cantidad de cajas */
+
+#cajas{
+    background-color: blue;
+    max-width: 1035px;
+    border: 1px solid black;
+}
